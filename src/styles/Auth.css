@@ -1,0 +1,127 @@
+/* Login page */
+.login{
+    margin:5px;
+    font-size: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.email label{
+    color:rgb(191, 225, 246);
+    margin: 5px;
+}
+.uname label{
+    color:rgb(191, 225, 246);
+    margin: 5px;
+}
+.pass label{
+    color:rgb(191, 225, 246);
+    margin: 5px;
+}
+.authTxt{
+    border:solid  rgb(147, 210, 250);
+    width: 500px;
+    outline: none;
+    border-right: solid rgb(55, 104, 135);
+    border-left: solid rgb(138, 206, 248);
+    border-top: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(55, 104, 135);
+}
+.authTxt:focus{
+    border-left: solid rgb(55, 104, 135);
+    border-right: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(138, 206, 248);
+    border-top: solid rgb(55, 104, 135);
+}
+.submit{
+    color:rgb(191, 225, 246);
+    margin:20px;
+    margin-left: 150px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-right: solid rgb(55, 104, 135);
+    border-left: solid rgb(138, 206, 248);
+    border-top: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(55, 104, 135);
+}
+.submit:hover{
+    border-left: solid rgb(55, 104, 135);
+    border-right: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(138, 206, 248);
+    border-top: solid rgb(55, 104, 135);
+}
+.login p{
+    margin-left: 50px;
+    color:rgb(191, 225, 246);
+}
+.login a{
+    color:rgb(191, 225, 246);
+    text-decoration: none;
+}
+.login a:hover{
+    color:rgb(55, 104, 135);
+    
+}
+
+/* SignUP page */
+
+.signupMainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupMain{
+    border-radius: 10px;
+    border-right: solid rgb(55, 104, 135);
+    border-left: solid rgb(138, 206, 248);
+    border-top: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(55, 104, 135);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    margin-top: -10px;
+}
+.signup{ 
+    margin:5px;
+    font-size: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.SUheading{
+    color:rgb(191, 225, 246);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.SUheading h2{
+    font-size: 80px;
+}
+.SUheading h1{
+    margin-top: -20px;
+    font-size: 180px;
+}
+.signup p{
+    margin-left: 50px;
+    color:rgb(191, 225, 246);
+}
+.signup a{
+    color:rgb(191, 225, 246);
+    text-decoration: none;
+}
+.signup a:hover{
+    color:rgb(55, 104, 135);
+    
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
+import '../styles/Auth.css';
 
 const Login = (props) => {
     const [credentials, setCredentials] = useState({ email: "", password: "" });
@@ -31,18 +32,22 @@ const Login = (props) => {
     };
 
     return (    
-        <div>
+        <div className='login'>
             <form onSubmit={handleSubmit}>
-                <div className="mb-3">
-                    <label className="form-label">Email address</label>
-                    <input type="email" className="form-control" value={credentials.email} onChange={onChange} name="email" /> {/* Add name attribute */}
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                <div className="email">
+                    <label>Email address</label>
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="password" className="form-label">Password</label>
-                    <input type="password" className="form-control" value={credentials.password} onChange={onChange} name="password" id="password" />
+                    <div className='authT'>
+                    <input type="email"  value={credentials.email} onChange={onChange} name="email" className='authTxt'/> {/* Add name attribute */}
+                    </div>
+                <div className="pass">
+                    <label htmlFor="password" >Password</label>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                    <div className='authT'>
+                    <input type="password"  value={credentials.password} onChange={onChange} name="password" id="password" className='authTxt' />
+                    </div>
+                <button type="submit" className="submit">Login</button>
+                <p>If You Don't Have An Account <Link to="/signup" >SignUp  </Link></p>
             </form>
         </div>
     );

@@ -4,23 +4,22 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Navbar from './components/Navbar';
 import { Home } from './components/Home';
 import About from './components/About';
 import NoteState from './context/notes/NoteState';
 import Signup from './components/Signup';
 import Login from './components/Login';
+import StartupPG from './components/StartupPG';
 
 function App() {
   return (
     <>
       <NoteState>
         <Router>
-          <Navbar />
-         
           <div className="container">
             <Routes>
-              <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<StartupPG />} />
+              <Route exact path="/home" element={<Home />} />
               <Route exact path="/about" element={<About />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
