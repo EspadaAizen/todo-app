@@ -1,9 +1,10 @@
 import Notes from './Notes';
 import Navbar from './Navbar';
+import "../styles/Home.css";
 export const Home = () => {
 
     return (
-        <div> 
+        <div className="container"> 
             <Navbar/>
             <Notes/>
         </div>

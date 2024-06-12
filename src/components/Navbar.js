@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import '../styles/Navbar.css';
 
   
 
@@ -27,7 +28,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <form className="d-flex"> 
-                    <button className='btn btn-primary mx-1' onClick={handleLogout}>Sign out</button>
+                    <button className='signOut' onClick={handleLogout}>Sign out</button>
                     </form>
                 </div>
             </div>
