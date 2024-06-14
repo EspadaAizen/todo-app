@@ -12,7 +12,7 @@ const Navbar = () => {
     };
     let location = useLocation();
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">TODO-App</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,9 @@ const Navbar = () => {
                             <Link className={`nav-link ${location.pathname==="/about"? "active": ""}`} to="/about">About</Link>
                         </li>
                     </ul>
-                    <form className="d-flex"> 
+                    
                     <button className='signOut' onClick={handleLogout}>Sign out</button>
-                    </form>
+                    
                 </div>
             </div>
         </nav>
