@@ -18,7 +18,7 @@ function App() {
         <Router>
           <div className="container">
             <Routes>
-            <Route exact path="/" element={<StartupPG />} />
+              <Route exact path="/todo-app" element={<StartupPG/>} />
               <Route exact path="/home" element={<Home />} />
               <Route exact path="/about" element={<About />} />
               <Route exact path="/login" element={<Login />} />
