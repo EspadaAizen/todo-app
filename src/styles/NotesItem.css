@@ -1,0 +1,23 @@
+.NotesMainCont{
+    display: flex;
+    flex-wrap: wrap; /* To wrap notes to the next line if the container is full */
+    gap: 10px; /* Space between notes */
+    margin: 10px;
+}
+.NotesSubCont{
+    
+}
+.CardMainBody{
+    border: 1px solid #b02222; /* Border for notes */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the note */
+    width: 200px; /* Set a fixed width for notes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Box shadow for a little depth */
+}
+
+.delNote{
+    
+}
+.updNote{
+    
+}

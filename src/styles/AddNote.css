@@ -53,7 +53,10 @@
 }
 .notesContainer{
     display: flex;
-    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap; /* To wrap notes to the next line if the container is full */
+    gap: 10px; /* Space between notes */
+    justify-content: center; /* Center the notes in the container */
     align-items: center;
     margin: 10px;
     margin-left: -2px;
