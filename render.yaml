@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: todo-app-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node index.js
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://MayurMJ:madmax%40Sosuke69MJErr0r@cluster0.thhxd.mongodb.net/todoDB
+      - key: PORT
+        value: 5000
