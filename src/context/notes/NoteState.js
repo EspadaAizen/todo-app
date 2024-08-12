@@ -2,7 +2,7 @@ import NoteContext from "./noteContext";
 import {useState} from "react";
 
 const NoteState = (props) =>{
-    const host = "http://localhost:5000"
+    const host = process.env.REACT_APP_API_URL;
     const noteInitial = []
     const [notes, setNotes] = useState(noteInitial)
 
@@ -11,7 +11,7 @@ const NoteState = (props) =>{
         // Retrieve the token from localStorage
     const token = localStorage.getItem('token');
         //API Call
-        const response = await fetch(`${host}/api/notes/fetchallnotes`,{
+        const response = await fetch(`${host}/notes/fetchallnotes`,{
             method: 'GET',
             headers:{
                 'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const NoteState = (props) =>{
         const token = localStorage.getItem('token');
         //TODO: API Call
         //API Call
-        const response = await fetch(`${host}/api/notes/addnote`,{
+        const response = await fetch(`${host}/notes/addnote`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const NoteState = (props) =>{
     const deleteNote = async(id)=>{
     const token = localStorage.getItem('token');
         //API Call
-        const response = await fetch(`${host}/api/notes/deeletenote/${id}`,{
+        const response = await fetch(`${host}/notes/deeletenote/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const NoteState = (props) =>{
     const editNote = async(id, title, description)=>{
     const token = localStorage.getItem('token');
         //API Call
-        const response = await fetch(`${host}/api/notes/updatenote/${id}`,{
+        const response = await fetch(`${host}/notes/updatenote/${id}`,{
             method: 'PUT',
             headers:{
                 'Content-Type': 'application/json',
