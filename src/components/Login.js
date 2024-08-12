@@ -6,9 +6,11 @@ const Login = (props) => {
     const [credentials, setCredentials] = useState({ email: "", password: "" });
     let navigate = useNavigate();
 
+    const API_URL = process.env.REACT_APP_API_URL;
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://todo-app1-lv0m.onrender.com/api/auth/login", {
+        const response = await fetch(`${API_URL}/auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
