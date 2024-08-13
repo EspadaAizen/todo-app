@@ -39,22 +39,28 @@ const NoteState = (props) =>{
         setNotes(notes.concat(note))
     }
 
-    //Delete a note
-    const deleteNote = async(id)=>{
-    const token = localStorage.getItem('token');
-        //API Call
-        const response = await fetch(`${host}/notes/deeletenote/${id}`,{
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json',
-                "auth-token":token
-            }
-        });
-        const json = response.json();
-        const newNotes = notes.filter((note) => {return note._id !== id})
-        setNotes(json)
-        setNotes(newNotes)
-    }
+    // Delete a Note
+    const deleteNote = async (id) => {
+        const token = localStorage.getItem('token');
+        try {
+            const response = await fetch(`${host}/notes/deletenote/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                    "auth-token": token,
+                },
+            });
+
+            const json = await response.json();
+            console.log(json);
+
+            // Remove the note from the state after successful deletion
+            const newNotes = notes.filter((note) => note._id !== id);
+            setNotes(newNotes);
+        } catch (error) {
+            console.error("Error deleting the note:", error);
+        }
+    };
 
     //Edit a note
     const editNote = async(id, title, description)=>{

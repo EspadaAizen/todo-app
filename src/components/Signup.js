@@ -10,6 +10,8 @@ const Signup = () => {
   });
   let navigate = useNavigate();
 
+  const API_URL = process.env.REACT_APP_API_URL;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(`${API_URL}/auth/createuser`, {
