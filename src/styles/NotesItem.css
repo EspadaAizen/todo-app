@@ -11,13 +11,55 @@
     border: 1px solid #b02222; /* Border for notes */
     border-radius: 5px; /* Rounded corners */
     padding: 10px; /* Padding inside the note */
-    width: 200px; /* Set a fixed width for notes */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Box shadow for a little depth */
+    width: 350px; /* Set a fixed width for notes */
+    box-shadow: 0 2px 5px #0000001a; /* Box shadow for a little depth */
+    border-right: solid rgb(55, 104, 135);
+    border-left: solid rgb(138, 206, 248);
+    border-top: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(55, 104, 135);
 }
 
 .delNote{
-    
+    color:rgb(191, 225, 246);
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-right: solid rgb(55, 104, 135);
+    border-left: solid rgb(138, 206, 248);
+    border-top: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(55, 104, 135);
+}
+.delNote:hover{
+    border-left: solid rgb(55, 104, 135);
+    border-right: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(138, 206, 248);
+    border-top: solid rgb(55, 104, 135);
 }
 .updNote{
-    
+    margin-left: 20px;
+    color:rgb(191, 225, 246);
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-right: solid rgb(55, 104, 135);
+    border-left: solid rgb(138, 206, 248);
+    border-top: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(55, 104, 135);
+}
+.updNote:hover{
+    border-left: solid rgb(55, 104, 135);
+    border-right: solid rgb(138, 206, 248);
+    border-bottom: solid rgb(138, 206, 248);
+    border-top: solid rgb(55, 104, 135);
+}
+
+.cardTitle{
+    border-bottom: solid rgb(55, 104, 135);
+    font-size: 40px;
+}
+.cardDesc{
+    border-bottom: solid rgb(55, 104, 135);
+    font-size: 20px;
 }

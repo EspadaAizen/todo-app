@@ -32,9 +32,10 @@ const Notes = () => {
     return (
         <>  
             <AddNote />
+            {/*
             <button ref={ref} type="button" className="launchD" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Launch demo modal
-            </button>
+            </button> */}
             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
@@ -64,13 +65,21 @@ const Notes = () => {
             </div>
 
             <div className="notes" id="dispNotes">
-                <h2>Your Notes</h2>
-                <div className="notesContainer"> 
+             <div className="notesH" id="ntsH"><h2>Your Notes</h2></div>   
+              
+              <div className="notesContM">
+                 <div className="notesContainer"> 
                 {notes.length===0 && 'No notes to display'}
-                </div>
+                {/*
                 {notes.map((note) => {
                     return <Noteitem key={note._id} updateNote={updateNote} note={note} />
                 })}
+                */}
+                {notes.map((note) => (
+      <Noteitem key={note._id} updateNote={updateNote} note={note} />
+    ))}
+                </div>
+                </div> 
             </div>
         </>
     )

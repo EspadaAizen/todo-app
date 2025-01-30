@@ -11,9 +11,9 @@ const Noteitem = (props) => {
             <div className="NotesSubCont">
                 <div className="CardMainBody">
                     <div className="MainBody">
-                        <h5 className="card-title">{note.title}</h5>
+                        <h5 className="cardTitle">{note.title}</h5>
                     </div>
-                    <p className="card-text">{note.description}</p>
+                    <p className="cardDesc">{note.description}</p>
                     <button className="delNote" value="Delete" onClick={()=>{deleteNote(note._id)}}>Delete</button>
                         <button className="updNote" value="Edit" onClick={()=>{updateNote(note)}}>Update</button>
 

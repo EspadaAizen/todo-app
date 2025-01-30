@@ -36,28 +36,3 @@
     border-top: solid rgb(55, 104, 135);
 }
 
-/* to display notes */
-
-.notes{ 
-    width: 1200px;
-    margin-top: 20px;
-    padding: 5px;
-    border-radius: 10px;
-    border-right: solid rgb(55, 104, 135);
-    border-left: solid rgb(138, 206, 248);
-    border-top: solid rgb(138, 206, 248);
-    border-bottom: solid rgb(55, 104, 135);
-}
-.notes h2{
-    margin-left: 43%;
-}
-.notesContainer{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap; /* To wrap notes to the next line if the container is full */
-    gap: 10px; /* Space between notes */
-    justify-content: center; /* Center the notes in the container */
-    align-items: center;
-    margin: 10px;
-    margin-left: -2px;
-}
