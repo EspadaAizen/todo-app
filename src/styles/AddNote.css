@@ -36,3 +36,19 @@
     border-top: solid rgb(55, 104, 135);
 }
 
+@media (max-width: 767px) {
+    .mainCont{
+        width: 100%;
+        font-size: 15px;
+    }
+    .mainCont h2{
+        margin-left: 35%;
+    }
+    .addNote{
+        width: 100px;
+        height: 30px;
+        margin-left: 35%;
+    }
+   
+}
+

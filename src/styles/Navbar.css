@@ -59,3 +59,9 @@
     border-bottom: solid rgb(138, 206, 248);
     border-top: solid rgb(55, 104, 135);
 }
+
+@media (max-width: 767px){
+    .navbar.navbar-expand-lg{
+        width: 358px;
+    }
+}

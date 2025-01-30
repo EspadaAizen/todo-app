@@ -1,6 +1,5 @@
 /* Enable page scrolling and hide the scrollbar */
 html, body {
-    height: 100%;
     margin: 0;
     overflow: scroll; /* Keep the page scrollable */
     /* Hide scrollbar for all browsers */
@@ -39,4 +38,18 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     grid-template-columns: repeat(3, 1fr); /* 3 notes per row */
     gap: 10px; /* Space between notes */
     width: 100%;
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    .notes {
+        width: 100%; /* Full width for small screens */
+    }
+    .notesContM {
+        padding: 5px;
+    }
+    .notesContainer {
+        font-size: 15px;
+        grid-template-columns: repeat(1, 1fr); /* 2 notes per row for smaller screens */
+    }
 }

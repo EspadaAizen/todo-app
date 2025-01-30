@@ -125,3 +125,42 @@
     color:rgb(55, 104, 135);
     
 }
+
+@media (max-width: 767px) {
+    /*For Login page*/
+    .login{
+        font-size: 15px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .authTxt{
+        width: 330px;
+    }
+    .submit{
+        font-size: 15px;
+        width: 80px;
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    
+    /*For signup page*/
+    .SUheading h2{
+        margin-top: 25px;
+        font-size: 28px;
+    }
+    .SUheading h1{
+        margin-top: 1px;
+        margin-bottom: 25px;
+        font-size: 80px;
+    }
+    .signup{
+        font-size: 16px;
+        width: 330px;
+    }
+
+    .signup p{
+        margin-top: -10px;
+        margin-left: 30px;
+    }
+}
