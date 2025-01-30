@@ -25,17 +25,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     border-bottom: solid rgb(55, 104, 135);
     overflow:hidden;
 }
-.notes h2{
-   /* margin-left: 45%;
-    margin-bottom: 10%; */
-    
-}
 .notesH{
     display: flex;
     justify-content: center;
 }
 .notesContM{
-    border: red solid;
     display: flex;
     overflow:auto;
     padding: 10px;
